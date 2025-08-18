@@ -1,0 +1,167 @@
+/* =-=-=-=-=-=-=Media-Queries=-=-=-=-=-=-=-= */
+
+/* ==============================================================
+=======================Screen-991=============================
+============================================================== */
+
+
+@media(max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+
+
+    .container {
+        padding: 2rem 2.5rem;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .home .homeContent {
+        width: 100%;
+
+    }
+
+    /* ------------------about---------------- */
+    .about .about-info-container {
+        /* align-items: center; */
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .about .about-info-container .about-img {
+        width: 50%;
+        height: 50rem;
+    }
+
+    .about .about-info-container .about-content {
+        width: 100%;
+    }
+}
+
+
+
+/* ==============================================================
+=======================Screen-768=============================
+============================================================== */
+
+
+
+@media(max-width:768px) {
+
+
+    /* --------------------contactMe----------------------- */
+    .contactMe .contactInfo {
+        width: 100%;
+        /* flex-direction: row;
+        flex-wrap: wrap;*/
+        margin-bottom: 3rem;
+        /* align-items: center; */
+    }
+
+    /* .contactMe .contactInfo .info {
+        width: 60%;
+    } */
+
+    .contactMe .contactForm {
+        width: 100%;
+    }
+
+    .contactMe .contactForm .nameContainer {
+        gap: 2rem;
+
+    }
+
+    .contactMe .contactForm .nameContainer .inputBox {
+        width: 100%;
+    }
+
+}
+
+
+/* ==============================================================
+=======================Screen-600=============================
+============================================================== */
+
+
+
+@media(max-width:600px) {
+
+    /* -----------about---------------- */
+    .about .about-info-container .about-img {
+        width: 80%;
+    }
+
+    .about .about-info-container .about-content .personalData {
+        text-align: center;
+    }
+
+    .about .about-info-container .about-content .personal-information {
+
+        .info {
+            width: 100%;
+        }
+    }
+
+    .about .about-info-container .about-content .links {
+        justify-content: center;
+
+        .social-links {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+}
+
+
+/* ==============================================================
+=======================Screen-450=============================
+============================================================== */
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .PortfolioPage .asideNav {
+        left: -100px;
+    }
+
+    .PortfolioPage .asideNav.hide {
+        /* width: 300px; */
+        left: 0;
+    }
+
+    .PortfolioPage .asideNav .menu-icon {
+        display: none;
+    }
+
+    .PortfolioPage .menu-icon.smallScreen {
+        display: block;
+    }
+
+    .asideNav #closeAsideNav {
+        display: block;
+    }
+
+
+    .PortfolioPage .mainContent {
+        margin-left: 0;
+    }
+
+    /* .PortfolioPage .mainContent.hide {
+        margin-left: 0;
+    } */
+
+
+
+
+
+
+}

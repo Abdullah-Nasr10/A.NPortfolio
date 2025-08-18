@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700;800&display=swap');
+
+/* #3B38A0 */
+/* #0D47A1 */
+/* #3d66be0f */
+/* #2063F3; */
+:root {
+    /* ===========color================== */
+    --main-color: #1976D2;
+    --main-color-1: #0D47A1;
+    --main-color-2: #3d66be0f;
+
+
+    --title-color: #424045;
+    --text-color: #615d65;
+    --body-color: #fcfcfd;
+    --container-color: #f2f2f3;
+    --border-color: #e8e7e9;
+    --white-color: #ffffff;
+
+    --red-color: #DC3545;
+    --yellow-color: #FFC107;
+    --green-color: #198754;
+
+    /* ===========fonts================== */
+    --body-font: "Montserrat Alternates", sans-serif;
+
+    --h1-font-size: 3.5rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.5rem;
+    --large-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    /* ===========weight================== */
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-800: 800;
+    /* -------------   */
+    --black: #000;
+    --white: #fff;
+
+}
+
+/* =============Base==================== */
+* {
+    /* font-family: "Poppins", sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    /* text-transform: capitalize; */
+    transition: all 0.3s ease;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-500);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+body.dark {
+    --title-color: #ffffff;
+    --text-color: #707070;
+    --body-color: #141415;
+    --container-color: #1f1d20;
+    --border-color: #29272a;
+
+    --black: #fff;
+    --white: #000;
+}
+
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--weight-800);
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.center {
+    /* display: grid !important;
+    place-items: center; */
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    /* margin-top: 1rem; */
+    color: var(--title-color);
+    border: 1px solid var(--main-color);
+    padding: 1.25rem 4.5rem 1.25rem 2rem;
+    border-radius: 2rem;
+    font-size: var(--large-font-size);
+    font-weight: var(--weight-600);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--white-color);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--main-color);
+    border-radius: inherit;
+    z-index: -10;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.btn:hover::before {
+    transform: translateX(-1px);
+}
+
+.btn .btnIcon {
+    position: absolute;
+    width: auto;
+    inset: -1px -1px -1px auto;
+    background-color: var(--main-color);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+
+/* .gradient-text {
+    background: linear-gradient(to right, #159ca3 39%, #8202de 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-size: 100% 100%;
+} */
+
+/* =====================containers-start============================= */
+
+.container {
+    width: 100%;
+    padding: 3rem 5%;
+}
+
+.container .row {
+    width: 100%;
+    padding: 2rem 0;
+    /* border: 1px solid black; */
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    font-size: var(--h2-font-size);
+    font-weight: var(--weight-800);
+    color: var(--title-color);
+    margin-bottom: 4rem;
+
+    span {
+        color: var(--main-color);
+    }
+}
+
+/* =====================containers-end============================= */
