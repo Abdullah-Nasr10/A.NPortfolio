@@ -722,6 +722,11 @@
         background-color: var(--green-color);
         color: white;
     }
+
+    span.blue {
+        background-color: var(--blue-color);
+        color: white;
+    }
 }
 
 
